@@ -1,0 +1,10 @@
+const express = require('express')
+const router = express.Router()
+const routerHandlers = require('../routerHandler/editListH')
+router.post('/editList/cancelLike', routerHandlers.cancelLike)
+router.post('/editList/removeFromPlayingList', routerHandlers.removeFromPlayingList)
+router.get('/editList/playFavouriteList', routerHandlers.playFavouriteList)
+router.post('/editList/playList', routerHandlers.playList)
+router.post('/editList/playingListSingleAdd', routerHandlers.playingListSingleAdd)
+router.get('/editList/clearPlayingList', routerHandlers.clearPlayingList)
+module.exports = router   
